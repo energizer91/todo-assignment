@@ -98,7 +98,7 @@ To run the services locally using **Docker Compose**:
 docker-compose up
 ```
 
-This command will start all services defined in `docker-compose.yml`. You can access the frontend via [http://localhost:3000](http://localhost:3000).
+This command will start all services defined in `docker-compose.yml`. You can access the frontend via [http://localhost:8081](http://localhost:8081).
 
 ### Kubernetes
 
