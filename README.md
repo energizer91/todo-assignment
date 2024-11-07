@@ -105,7 +105,7 @@ This command will start all services defined in `docker-compose.yml`. You can ac
 1. **Create Kubernetes Secrets** for sensitive information like `JWT_SECRET`:
 
    ```sh
-   kubectl create secret generic jwt-secret --from-literal=JWT_SECRET=[your_jwt_secret_here]
+   kubectl create secret generic jwt-secret --from-literal=jwt-secret="[your_jwt_secret_here]"
    ```
 
 2. **Apply Kubernetes manifests** to deploy the services:

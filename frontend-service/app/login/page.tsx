@@ -1,12 +1,13 @@
 import * as React from 'react';
-import { login } from '../actions/login';
 import { Page } from '@/app/ui/Page';
+import { Form } from '@/app/src/Form';
+import { login } from '@/app/actions/login';
 
 export default async function LoginPage() {
   return (
     <Page>
       <h1>Login</h1>
-      <form action={login}>
+      <Form action={login}>
         <label>
           email
           <input type="email" name="email" />
@@ -16,7 +17,7 @@ export default async function LoginPage() {
           <input type="password" name="password" />
         </label>
         <button type="submit">login</button>
-      </form>
+      </Form>
     </Page>
   );
 }
